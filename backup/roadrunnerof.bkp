@@ -1,0 +1,305 @@
+-- MySQL dump 10.13  Distrib 5.7.25, for Win64 (x86_64)
+--
+-- Host: localhost    Database: db_roadrunner
+-- ------------------------------------------------------
+-- Server version	5.7.25-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `tbl_evento`
+--
+
+DROP TABLE IF EXISTS `tbl_evento`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_evento` (
+  `id_eventos` int(11) NOT NULL AUTO_INCREMENT,
+  `foto_evento` varchar(225) NOT NULL,
+  `local_evento` varchar(100) NOT NULL,
+  `data_evento` varchar(50) NOT NULL,
+  `nome_evento` varchar(100) NOT NULL,
+  `desc_evento` text NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id_eventos`)
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_evento`
+--
+
+LOCK TABLES `tbl_evento` WRITE;
+/*!40000 ALTER TABLE `tbl_evento` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_evento` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_faleconosco`
+--
+
+DROP TABLE IF EXISTS `tbl_faleconosco`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_faleconosco` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nome` varchar(100) NOT NULL,
+  `celular` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `profissao` varchar(100) NOT NULL,
+  `sexo` varchar(100) NOT NULL,
+  `sugestao` text,
+  `telefone` varchar(100) DEFAULT NULL,
+  `homepage` varchar(100) DEFAULT NULL,
+  `facebook` varchar(100) DEFAULT NULL,
+  `informacoes` text,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_faleconosco`
+--
+
+LOCK TABLES `tbl_faleconosco` WRITE;
+/*!40000 ALTER TABLE `tbl_faleconosco` DISABLE KEYS */;
+INSERT INTO `tbl_faleconosco` VALUES (2,'Pedro','11 94002-8922','pedro@almeida.com.br','Programador','M',' jhhg ui nb buoy ','11 4002-8922','http://www.com.br','http://www.com.br','Testando o Banco ');
+/*!40000 ALTER TABLE `tbl_faleconosco` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_loja`
+--
+
+DROP TABLE IF EXISTS `tbl_loja`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_loja` (
+  `id_loja` int(11) NOT NULL AUTO_INCREMENT,
+  `nome_loja` varchar(100) NOT NULL,
+  `endereco_loja` varchar(100) NOT NULL,
+  `cidade_loja` varchar(100) NOT NULL,
+  `telefone_loja` varchar(100) NOT NULL,
+  `iframe_loja` varchar(100) NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  `imagem_loja` varchar(225) NOT NULL,
+  PRIMARY KEY (`id_loja`)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_loja`
+--
+
+LOCK TABLES `tbl_loja` WRITE;
+/*!40000 ALTER TABLE `tbl_loja` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_loja` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_nivel_usuario`
+--
+
+DROP TABLE IF EXISTS `tbl_nivel_usuario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_nivel_usuario` (
+  `id_nivel_usuario` int(11) NOT NULL AUTO_INCREMENT,
+  `nivel_usuario` varchar(100) NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id_nivel_usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_nivel_usuario`
+--
+
+LOCK TABLES `tbl_nivel_usuario` WRITE;
+/*!40000 ALTER TABLE `tbl_nivel_usuario` DISABLE KEYS */;
+INSERT INTO `tbl_nivel_usuario` VALUES (10,'CEO',1);
+/*!40000 ALTER TABLE `tbl_nivel_usuario` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_noticia`
+--
+
+DROP TABLE IF EXISTS `tbl_noticia`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_noticia` (
+  `id_noticia` int(11) NOT NULL AUTO_INCREMENT,
+  `titulo_noticia` varchar(100) NOT NULL,
+  `texto_noticia` text NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id_noticia`)
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_noticia`
+--
+
+LOCK TABLES `tbl_noticia` WRITE;
+/*!40000 ALTER TABLE `tbl_noticia` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_noticia` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_produto`
+--
+
+DROP TABLE IF EXISTS `tbl_produto`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_produto` (
+  `id_produto` int(11) NOT NULL AUTO_INCREMENT,
+  `nome_produto` varchar(100) NOT NULL,
+  `imagem_produto` varchar(225) NOT NULL,
+  `preconovo_produto` varchar(100) NOT NULL,
+  `procoantigo_produto` varchar(100) NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id_produto`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_produto`
+--
+
+LOCK TABLES `tbl_produto` WRITE;
+/*!40000 ALTER TABLE `tbl_produto` DISABLE KEYS */;
+INSERT INTO `tbl_produto` VALUES (1,'bike 1','aaa','666','',1);
+/*!40000 ALTER TABLE `tbl_produto` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_promocao`
+--
+
+DROP TABLE IF EXISTS `tbl_promocao`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_promocao` (
+  `id_promocao` int(11) NOT NULL AUTO_INCREMENT,
+  `id_produto` int(11) NOT NULL,
+  `porcentagem_promocao` int(11) NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id_promocao`),
+  KEY `id_produto` (`id_produto`),
+  CONSTRAINT `tbl_promocao_ibfk_1` FOREIGN KEY (`id_produto`) REFERENCES `tbl_produto` (`id_produto`)
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_promocao`
+--
+
+LOCK TABLES `tbl_promocao` WRITE;
+/*!40000 ALTER TABLE `tbl_promocao` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_promocao` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_sobreloja`
+--
+
+DROP TABLE IF EXISTS `tbl_sobreloja`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_sobreloja` (
+  `id_sobreloja` int(11) NOT NULL AUTO_INCREMENT,
+  `id_texto_loja` int(11) NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id_sobreloja`),
+  KEY `id_texto_loja` (`id_texto_loja`),
+  CONSTRAINT `tbl_sobreloja_ibfk_1` FOREIGN KEY (`id_texto_loja`) REFERENCES `tbl_texto_sobreloja` (`id_texto_loja`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_sobreloja`
+--
+
+LOCK TABLES `tbl_sobreloja` WRITE;
+/*!40000 ALTER TABLE `tbl_sobreloja` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_sobreloja` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_texto_sobreloja`
+--
+
+DROP TABLE IF EXISTS `tbl_texto_sobreloja`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_texto_sobreloja` (
+  `id_texto_loja` int(11) NOT NULL AUTO_INCREMENT,
+  `txt_quemsomos` text,
+  `txt_nossamissao` text,
+  `txt_nossavisao` text,
+  `txt_nossosvalores` text,
+  `status` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id_texto_loja`)
+) ENGINE=InnoDB AUTO_INCREMENT=66 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_texto_sobreloja`
+--
+
+LOCK TABLES `tbl_texto_sobreloja` WRITE;
+/*!40000 ALTER TABLE `tbl_texto_sobreloja` DISABLE KEYS */;
+/*!40000 ALTER TABLE `tbl_texto_sobreloja` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tbl_usuario`
+--
+
+DROP TABLE IF EXISTS `tbl_usuario`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tbl_usuario` (
+  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
+  `id_nivel_usuario` int(11) NOT NULL,
+  `nome_usuario` varchar(100) NOT NULL,
+  `senha_usuario` varchar(225) NOT NULL,
+  `login_usuario` varchar(100) NOT NULL,
+  `status` tinyint(4) NOT NULL,
+  PRIMARY KEY (`id_usuario`),
+  KEY `id_nivel_usuario` (`id_nivel_usuario`),
+  CONSTRAINT `tbl_usuario_ibfk_1` FOREIGN KEY (`id_nivel_usuario`) REFERENCES `tbl_nivel_usuario` (`id_nivel_usuario`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tbl_usuario`
+--
+
+LOCK TABLES `tbl_usuario` WRITE;
+/*!40000 ALTER TABLE `tbl_usuario` DISABLE KEYS */;
+INSERT INTO `tbl_usuario` VALUES (8,10,'Pedro Almeida Santos','202cb962ac59075b964b07152d234b70','pedroalmeida',1);
+/*!40000 ALTER TABLE `tbl_usuario` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2019-05-10 11:33:30

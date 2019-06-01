@@ -1,0 +1,910 @@
+@media screen and (max-device-width:680px){
+
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+h1{
+    font-family: "Comic Sans MS";
+    font-size: 24px;
+    color: #00ffed;
+    
+}
+
+a{
+    text-decoration: none;
+    color: darkgray;
+}
+
+a:hover{
+    color: darkgray;
+}
+
+/* CABEÇALHO */
+header{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    
+}
+
+/* AJUSTE PARA O SLIDER NAO FICAR ATRAS DO MENU NAV*/
+#ajuste{
+    width: 100%;
+    height: 100px;
+}
+
+
+/* CLASSE PARA DEIXAR CENTRALIZADO */
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* COMEÇA ESTILIZAÇÃO DO CABEÇALHO */
+#caixa_header{
+    width: 100%;
+    height: 100px;
+
+}
+
+#caixa_logo{
+    width: 65px;
+    height: inherit;
+    padding-top: 15px;
+    box-sizing: border-box;
+    float: left;
+	display: none;
+}
+
+#caixa_logo, .btn, #footer_logo img, img, .btnEnviar, .rdo:hover{
+    cursor: pointer;
+}
+
+
+#caixa_assuntos{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-left: 20px;
+}
+
+
+#caixa_login{
+    width: 230px;
+    height: inherit;
+    float: left;
+	margin-left: 500px;
+	display: none;
+
+}
+
+#menu_principal{
+    width: 100px;
+    height: 100px;
+	margin-left: 200px;
+	background-color: green;
+	display: none;
+    padding-left: 20px;
+}
+
+ul{
+    width: inherit;
+    height: 100px;
+
+}
+
+#caixa_assuntos #menu_principal li{
+    height: 25px;
+    float: left;
+    list-style: none;
+    margin-right: 30px;
+    margin-top: 35px;
+    color: darkgray;
+    font-size: 20px;
+    
+}
+
+.btn_login{
+    width: 350px;
+    height: 40px;
+    float: left;
+    padding-top: 5px;
+}
+
+.caixa_login{
+    width: 115px;
+    height: 60px;
+    box-sizing: border-box;
+    float: left;
+    padding-top: 10px;
+
+}
+
+.text{
+    width: 110px;
+    height: 20px;
+    margin-top: 21px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.btn{
+    margin-left: 40px;
+    width: 150px;
+    height: 18px;
+    border-radius: 5px; 
+}
+
+#caixa_assuntos #menu_principal li:hover{
+    color: white;
+    cursor: pointer;
+    border-bottom: solid 2px #00ffed;
+}
+
+/* TERMINA ESTILIZAÇÃO DO CABEÇALHO */
+
+/* CAIXA MENU E CONTEUDO TAMANHO */
+#menu_conteudo{
+    width: 100%;
+    min-height: 800px;
+    height: auto;
+    overflow: hidden;
+ 
+}
+
+
+/* COMEÇA ESTIULIZAÇÃO/CONFIGURAÇÃO DO MENU LATERAL */
+#caixa_lateral{
+    width: 195px;
+    min-height: 800px;
+    height: auto;
+    overflow: hidden;
+    padding-top: 50px;
+    background-color: #000000;
+    float: left;
+}
+#menu_lateral{
+    min-height: 800;
+    height: auto;
+    overflow: hidden;
+
+    
+}
+#menu_lateral li{
+    width: 150px;
+    height: 30px;
+    list-style: none;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 40px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+    
+}
+
+#menu_lateral li:hover{
+   background-color: #191919;
+    cursor: pointer;
+    transition: 0.3s;
+    border-left: solid 10px #00ffed;
+}
+
+/* TERMINA ESTIULIZAÇÃO/CONFIGURAÇÃO DO MENU LATERAL */
+
+
+/* COMEÇA ESTIULIZAÇÃO/CONFIGURAÇÃO DA AREA PRODUTOS*/
+#caixa_produtos{
+    width: 80%;
+    min-height: 800px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.produtos:hover{
+    cursor: pointer;
+}
+
+.produtos{
+    width: 280px;
+    height: 300px;
+    border: solid 2px #000000;
+    margin-top: 50px;
+    margin-left: 250px;
+	float: none;
+}
+
+.produtos:hover{
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.imagem_produto{
+    width: 160px;
+    height: 150px;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sobre_produto{
+    width: 280px;
+    height: 100px;
+    padding-left: 0px;
+    font-size: 1em;
+	
+	background-color: blue;
+    line-height: normal;
+    
+}
+
+.detalhe_produto{
+    width: 280px;
+    height: 30px;  
+    font-size: 1em;
+    padding-left: 0px;
+    box-sizing: border-box;
+	background-color: green;
+}
+
+.detalhe_produto p:hover{
+    text-decoration: underline;
+}
+
+/* TERMINA ESTIULIZAÇÃO/CONFIGURAÇÃO DA AREA PRODUTOS*/
+
+
+/* REDES SOCIAIS NA LATERAL DO SITE */
+#redes_sociais{
+    width: 64px;
+    height: 195;
+    margin-top: -45px;
+    position: absolute;
+    position: fixed;
+}
+
+
+/* RODAPÉ DO SITE */
+footer{
+    width: 100%;
+    height: 320px;
+    background-color: black;
+}
+
+#center_footer{
+    width: 100%;
+    height: 300px;
+    
+}
+
+#footer_nav, #footer_midia{
+    width: 200px;
+    height: 300px;
+    list-style: none;
+    text-align: center;
+    padding-top: 40px;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    box-sizing: border-box;
+    margin-left: 0px;
+    float: left;
+    line-height: 2;
+}
+
+
+#footer_nav{
+ margin-left: 200px;
+}
+
+#footer_logo{
+    width: 200px;
+    height: 300px;
+    margin-left: 0px;
+    text-align: center;
+    padding-top: 70px;
+    box-sizing: border-box;
+    float: left;
+}
+
+#footer_midia li, #footer_nav li{
+    font-family: "Courier New";
+}
+
+/* FIM DO RODAPÉ*/
+
+
+/* CONFIGURAÇÕES E ESTILIZAÇÕES PAGINA FALE CONOSCO*/
+
+#formulario{
+    width: 100%;
+    min-height: 1400px;
+    height: auto;
+    overflow: hidden;
+    background-color: #f1f1f1;
+
+}
+
+#caixa_formulario{
+    width: 100%;
+    height: 1400px;
+    overflow: hidden;
+    margin-top: 20px;
+    box-sizing: border-box;
+ 
+
+}
+
+#titulo_formulario{
+    width: 100%;
+    height: 50px;
+    font-size: 4em;
+    font-family: monospace;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #000000;
+	padding-left: 200px;
+}
+
+#dados_formulario{
+    width: 100%;
+    height: 1400px;
+    box-sizing: border-box;
+    padding-top: 70px;
+	padding-left: 180px;
+
+}
+
+#table_formulario, #table_formulario2{
+    float: none;
+}
+
+p{
+    font-size: 1.6em;
+    margin-bottom: 5px;
+    font-weight: bolder;
+	text-align: center;
+}
+
+.txtForm{
+    width: 400px;
+    height: 40px;
+	text-align: center;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 8px #888888;
+    font-family: monospace;
+    
+}
+
+
+
+.txtSexo{
+    margin-top: 10px;
+    margin-left: 0px;
+}
+
+.txtSugestao{
+	margin-left: 0px;
+}
+
+.rdo{
+    margin-left: 70px;
+    
+}
+
+.textarea{
+    width: 400px;
+    height: 200px;
+    resize: none;
+    box-shadow: 5px 5px 8px #888888;
+    font-family: monospace;
+    padding: 15px;
+
+}
+
+.btnEnviar{
+    margin-top: 50px;
+    width: 200px;
+    height: 50px;
+	font-size: 1.6em;
+    border-radius: 5px;
+	margin-left: 100px;
+}
+/* FINAL DAS CONFIGURAÇÕES E ESTILIZAÇÕES PAGINA FALE CONOSCO*/
+
+
+/* CONFIGURAÇÕES E ESTILIZAÇÕES PAGINA SOBRE A LOJA*/
+#navPag{
+    width: 100%;
+    height: 650px;
+    margin-top: 50px;
+    
+}
+
+
+.img_nav{
+    width: 100%;
+    height: 110px;
+    margin-right: 50px;
+    background-color: black;
+    color: darkgray;
+    border: solid 1px gray;
+    margin-bottom: 20px;
+
+
+}
+
+.img_nav p{
+    font-size: 30px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.img_nav h1{
+    font-family: "Comic Sans MS";
+    font-size: 24px;
+    color: darkgray;
+    margin-left: 420px;
+
+}
+
+.imgSobreLoja{
+    width: 70px;
+    height: 70px;
+    filter: grayscale(100%);
+    margin-left: 450px;
+    
+}
+
+.img_nav:hover .imgSobreLoja{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    -moz-transform: none;
+	-webkit-transform: none;
+	transform: none;
+    color: white;
+    
+}
+
+.img_nav:hover{
+    cursor: pointer;
+}
+
+.img_nav:hover p{
+    color: white;
+}
+
+.img_nav:hover h1{
+    color: #00ffed;
+}
+
+
+
+#sectionSobre{
+    width: 100%;
+    min-height: 1800px;
+    height: auto;
+    overflow: hidden;
+
+}
+
+#quemSomosTitle, #nossaMissaoTitle, #nossaVisaoTitle, #nossosValoresTitle{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 25px;
+    
+    box-sizing: border-box;
+}
+
+#quemSomosCont, #nossaMissaoCont, #nossaVisaoCont,  #nossosValoresCont{
+    width: 100%;
+    min-height: 350px;
+    height: auto;
+    overflow: hidden;
+    font-size: 25px;
+
+}
+
+
+.cont{
+    width: 100%;
+    min-height: 350px;
+    height: auto;
+    overflow: hidden;
+    padding-top: 20px;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+
+
+/* FINAL DAS CONFIGURAÇÕES E ESTILIZAÇÕES PAGINA SOBRE A LOJA*/
+
+/* CONFIGURAÇÕES E ESTILIZAÇÕES PAGINA PROMOÇÕES*/
+
+#caixa_promocao{
+    width: 100%;
+    min-height: 1200px;
+    height: auto;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+#title_promocao{
+    width: 100%;
+    height: 150px;
+    background-color: #00ffed;
+    border: solid 5px black;
+    padding-top: 50px;
+    box-sizing: border-box;
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.produto_promocao{
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 250px;
+	margin-bottom: 10px;
+    float: none;
+}
+
+.porc_desconto{
+    width: 500px;
+    height: 100px;
+    background-color: black;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+
+.imagem_promocao{
+    margin-left: 120px;
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+}
+
+.imagem_promocao img{
+    width: 250px;
+    height: 250px;
+}
+
+.valor_desconto{
+    width: 500px;
+    height: 130px;
+    border: solid 5px black;
+    box-sizing: border-box;
+    padding-top: 10px;
+}
+.valores_desconto{
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+}
+.valores_desconto h2{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.valores_desconto h1{
+    color: black;
+    font-weight: bolder;
+    
+}
+
+/* FINAL DAS CONFIGURAÇÕES E ESTILIZAÇÕES PAGINA PROMOÇÕES*/
+
+/* CONFIGURAÇÕES E ESTILIZAÇÕES PAGINA NOSSAS LOJAS*/
+
+#caixa_nossasLojas{
+    width: 100%;
+    min-height: 1250px;
+	height: auto;
+	overflow: hidden;
+
+}
+
+#title_lojas, #title_map{
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    color: black;
+    border-bottom: 5px solid black;
+}
+
+#caixa_localizacao{
+    width: 100%;
+    height: 450px;
+    box-sizing: border-box;
+	text-align: center;
+
+}
+
+iframe{
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+#lojas{
+    width: 100%;
+    min-height: 200px;
+	height: auto;
+	overflow: hidden;
+
+}
+
+.caixa_loja{
+    width: 100%;
+    height: 200px;
+    padding-top: 20px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+
+.img_loja{
+    width: 200px;
+    height: 160px;
+    float: left;
+}
+
+.img_loja img{
+    width: 200px;
+    height: 160px;
+}
+
+.inf_loja{
+    width: 500px;
+    height: 150px;
+    background-color: white;
+    float: left;
+    border: solid 5px black;
+}
+
+.nome_loja{
+    width: 500px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+}
+
+.desc_loja{
+    width: 500px;
+    height: 120px;
+    padding-left: 10px;
+    font-size: 20px;
+    line-height: 2;
+    
+}
+
+/* FINAL DAS CONFIGURAÇÕES E ESTILIZAÇÕES PAGINA NOSSAS LOJAS*/
+
+/* CONFIGURAÇÕES E ESTILIZAÇÕES PAGINA  NOSSOS EVENTOS */
+
+#caixa_eventos{
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+	text-align: center;
+}
+
+#eventos{
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    padding-top: 20px;
+   
+
+}
+
+.evento{
+    width: 100%;
+    height: 300px;
+
+}
+
+.img_evento{
+    width: 450px;
+    height: 300px;
+    float: left;
+}
+
+.img_evento img{
+	width: 450px;
+    height: 300px;
+}
+
+.inf_evento{
+    width: 750px;
+    height: 200px;
+
+    float: left;
+}
+
+.desc_eventos{
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    overflow: hidden;
+    border-bottom: solid 5px black;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.local_evento{
+    width: 375px;
+    height: 300px;
+
+
+    float: left
+}
+
+.data_hora_evento{
+    width: 375px;
+    height: 300px;
+    float: left;
+
+}
+
+h3{
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#title_eventos{
+    width: 100%;    height: 100px;
+    border-bottom: solid 5px black;
+    font-weight: bolder;
+    text-align-last: center;
+    font-size: 35px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    
+}
+
+/* FINAL DAS CONFIGURAÇÕES E ESTILIZAÇÕES PAGINA NOSSOS EVENTOS */
+
+/* CONFIGURAÇÕES E ESTILIZAÇÕES PAGINA  NOSSAS NOTICIAS */
+
+#title_pag{
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+#noticias{
+    width: 100%;
+    min-height: 900px;
+	height: auto;
+	overflow: hidden;
+    padding-top: 50px;
+    padding-left: 150px;
+    box-sizing: border-box;
+    
+}
+
+.noticia{
+    width: 400px;
+    height: 350px;
+    float: left;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    border: solid 2px #000000;
+    box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+.titulo_noticia{
+    width: 400px;
+    height: 50px;
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+.conteudo_noticia{
+    width: 400px;
+    height: 250px;
+    text-align: center;
+    
+}
+
+.ler_mais{
+    text-align: center;
+    width: 400px;
+    height: 50px;
+    text-decoration: underline;
+    color: crimson;
+    
+}
+
+
+/* FINAL DAS CONFIGURAÇÕES E ESTILIZAÇÕES PAGINA NOSSAS NOTICIAS */
+
+/* EFEITO ZOOM*/
+
+img {
+	overflow: hidden;
+}
+
+#caixa_produtos img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+#caixa_produtos img:hover {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/* JQuery */
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.jssora061 {display:block;position:absolute;cursor:pointer;}
+.jssora061 .a {fill:none;stroke:#fff;stroke-width:360;stroke-linecap:round;}
+.jssora061:hover {opacity:.8;}
+.jssora061.jssora061dn {opacity:.5;}
+.jssora061.jssora061ds {opacity:.3;pointer-events:none;}
+
+
+
+
+/* SLIDE */
+#jssor_1{
+	display: none;
+}
+	
+}

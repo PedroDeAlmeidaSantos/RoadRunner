@@ -1,0 +1,726 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+/* COMEÇO HEADER */
+
+header{
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+}
+
+#caixa_header{
+    width: 1200px;
+    height: 200px;
+    background-color: black;
+    border-radius: 40px 40px 0px 0px;
+}
+
+#title_pag{
+    width: 800px;
+    height: inherit;    
+    float: left;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: white;
+    padding-top: 80px;
+    box-sizing: border-box;
+}
+
+#logo_pag{
+    width: 400px;
+    height: inherit;
+    float: left;
+    padding-top: 50px;
+    padding-left: 150px;
+    box-sizing: border-box;
+}
+
+#logo_pag img{
+    width: 100px;
+    height: 100px;
+}
+
+/* FINAL HEADER */
+
+
+/* COMEÇO CONTEUDO */
+
+#conteudo_pag{
+    width: 1200px;
+    min-height: 100px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+/* FINAL CONTEUDO */
+
+
+/* COMEÇO MENU */
+
+#caixa_nav{
+    width: 1200px;
+    height: 150px;
+    border: solid 1px black;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#menu{
+    width: 900px;
+    height: 150px;
+    float: left;
+}
+
+.menu{
+    width: 220px;
+    height: 150px;
+    float: left;
+    margin-left: 5px;
+}
+
+.image_menu{
+    width: 220px;
+    height: 100px;
+}
+
+.text_menu{
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.image_menu img{
+    margin-left: 70px;
+    margin-top: 20px;
+}
+
+.image_user{
+    padding-left: 15px;
+}
+
+/* FINAL MENU */
+
+/* COMEÇO LOGOUT */
+#logout{
+    width: 300px;
+    height: 150px;
+ 
+    float: left;
+}
+
+#bemvindo, #caixa_logout{
+    width: 300px;
+    height: 75px;
+    text-align: center;
+    padding-top: 25px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+#bemvindo span{
+    padding-left: 10px;
+}
+
+.menu:hover .text_menu{
+    text-decoration: underline;
+    
+}
+
+.menu:hover{
+    cursor: pointer;
+}
+
+/* FINAL LOGOUT */
+
+/* COMEÇO FOOTER */
+
+footer{
+    width: 100%;
+    height: 200px;
+}
+
+#caixa_footer{
+    width: 1200px;
+    height: 100px;
+    background-color: black;
+    border-radius: 0px 0px 40px 40px;
+    text-align: center;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+
+#caixa_footer span{
+    font-style: italic;
+    color: white;
+}
+
+/* FINAL FOOTER*/
+
+
+/* ---------------- FALE CONOSCO ---------------- */
+
+#cadastro_fale{
+    width: 1200px;
+    min-height: 450px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.consulta{
+    width: 1200px;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+.tabela{
+    width: 800px;
+    min-height: 50px;
+    margin-left: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;    
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.tabela td{
+    border: solid 1px black;
+    padding: 5px;
+}
+
+
+.tabela img{
+    width: 30px;
+    height: 30px;
+}
+
+/* ---------------- ADM USUARIO E NIVEL ---------------- */
+
+#caixa_usuario_nivel{
+    width: 1200px;
+    min-height: 450px;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#caixa_cadastrar_usuario, #caixa_cadastrar_nivel{
+    width: 600px;
+    height: 500px;
+    margin-top: 100px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.img_cadastro img{
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+#caixa_cadastrar_nivel img, #caixa_nivel img{
+    margin-left: 100px;
+}
+
+#caixa_cadastrar_nivel .txt_cadastro, #caixa_nivel .txt_cadastro{
+    margin-top: 40px;
+}
+
+.txt_cadastro{
+    margin-top: 35px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.img_cadastro, .txt_cadastro{
+    float: left;
+}
+
+#caixa_usuario, #caixa_nivel{
+    width: 600px;
+    height: 100px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    float: left;
+}
+
+.txt_cadastro:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#caixa_cadastro_usuario{
+    width: 1200px;
+    min-height: 450px;
+    height: auto;
+    box-sizing: border-box;
+} 
+
+#dados_usuario{
+    width: 1200px;
+    height: 400px;
+    box-sizing: border-box;
+    padding-left: 450px;
+}
+
+#dados_nivel{
+    width: 1200px;
+    height: 200px;
+    box-sizing: border-box;
+    padding-left: 450px;
+}
+
+.campos_cadastro span{
+    font-size: 20px;
+
+}
+
+#campos_cadastro{
+    width: 1200px;
+    height: auto;
+
+
+}
+
+.txtForm{
+    width: 250px;
+    height: 30px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.txtForm1{
+    width: 65px;
+    height: 30px;
+    text-align: center;
+    margin-top: 15px;
+   
+}
+
+.txtForm2{
+    width: 250px;
+    height: 30px;
+    margin-left: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btnRegistrar{
+    width: 250px;
+    height: 25px;
+    
+}
+
+#cadastro_niveis{
+    width: 1200px;
+    min-height: 100px;
+    margin-top: -230px;
+    height: auto;
+}
+
+
+
+/* ---------------- MODAL ---------------- */
+
+#container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    z-index: 999;
+    padding-top: 150px;
+    display: none;
+    margin-top: -20px;
+}
+
+#modal{
+    width: 500px;
+    min-height: 500px;
+    height: auto;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+
+#caixa_fechar{
+    width: 500px;
+    height: 25px;
+    padding-top: 10px;
+    padding-left: 450px;
+    box-sizing: border-box;
+
+}
+
+#fechar img{
+    width: 30px;
+    height: 30px;
+}
+
+#caixa_dados{
+    width: 500px;
+    height: 500px;
+}
+
+.dados_cliente{
+    width: 500px; 
+    height: 35px;
+    padding-left: 10px;
+    padding-top: 10px;
+    box-sizing: border-box;
+  
+}
+
+.dados_cliente span{
+    font-weight: bold;
+}
+
+/* --------------- ADM CONTEUDO --------------  */
+
+
+#caixa_icones{
+    width: 1200px;
+    min-height: 450px;
+    box-sizing: border-box;
+  
+}
+
+#caixa_icones_produto{
+    width: 1200px;
+    min-height: 300px;
+    box-sizing: border-box;
+  
+}
+
+
+#caixa_centralizar{
+    width: 450px;
+    height: 450px;
+    margin-left: 400px;
+    padding-top: 10px;
+}
+
+#caixa_centralizar_produto{
+    width: 450px;
+    height: 300px;
+    margin-left: 400px;
+    padding-top: 10px;
+}
+
+.icones_conteudo{
+    width: 450px;
+    height: 90px;
+  
+}
+
+.icones_conteudo img{
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+}
+
+.icon_conteudo, .icon_conteudo1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 30px;
+    
+}
+
+.txt_conteudo{
+    width: 110px;
+    height: 80px;
+    float: left;
+
+    box-sizing: border-box;
+}
+
+.img_conteudo{
+    width: 300px;
+    height: 80px;
+    float: left;
+    text-align: left;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.img_conteudo img{
+    width: 100px;
+    height: 100px;
+}
+
+.icon_conteudo:hover{
+    border-bottom: solid 1px black;
+}
+
+.icones_conteudo:hover{
+    cursor: pointer;
+}
+
+
+/* --------------- ADM SOBRE NÓS --------------  */
+
+#caixa_sobrenos{
+    width: 1200px;
+    min-height: 450px;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.text_sobrenos{
+    width: 250px;
+    height: 110px;
+    float: left;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 50px;
+}
+
+.titulo_campo{
+    width: 250px;
+    height: 70px;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    box-sizing: border-box;
+}
+
+.caixa_campo{
+    width: 250px;
+    height: 110px;
+    border: solid 1px black;
+    box-sizing: border-box;
+}
+
+.textarea{
+    width: 250px;
+    height: 110px;
+    resize: none;
+}
+
+.btn{
+    width: 250px;
+    height: 30px;
+    margin-top: 100px;
+    margin-left: 460px;
+}
+
+
+#cadastro_sobreloja{
+    width: 1200px;
+    min-height: 100px;  
+    margin-top: 20px;
+    height: auto;
+    overflow: hidden;
+ 
+}
+
+.table_sobrenos{
+    width: 1200px;
+    min-height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;    
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.table_sobrenos img{
+    width: 30px;
+    height: 30px;
+}
+
+.table_sobrenos tr td{
+     border: solid 1px black;
+}
+
+.table_sobrenos textarea{
+    margin:  5px;
+    width: 250px;
+    height: 50px;
+    resize: none;
+}
+
+/* --------------- ADM NOTICIAS --------------  */
+
+#caixa_noticias, #caixa_nossasLojas{
+    width: 1200px;
+    min-height: 10px;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#titulo_noticia{
+    width: 750px;
+    height: 100px;
+    margin-left: 200px;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 25px;
+    box-sizing: border-box;
+    
+}
+
+#texto_noticia{
+    width: 750px;
+    height: 170px;
+    margin-left: 200px;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+    box-sizing: border-box; 
+}
+
+#posicao_noticia{
+    width: 750px;
+    height: 100px;
+    box-sizing: border-box;
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: center;
+    margin-left: 200px;
+}
+
+#cadastro_noticias{
+    width: 1200px;
+    min-height: 250px;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.table_noticias{
+    width: 800px;
+    min-height: 50px;
+    margin-left: 200px;
+    margin-top: 50px;    
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table_noticias td{
+    border: solid 1px black;
+    padding: 5px;
+}
+
+
+.table_noticias img{
+    width: 30px;
+    height: 30px;
+}
+
+.table_noticias tr td textarea, .table_eventos tr td textarea{
+    margin: 5px;
+    width: 250px;
+    height: 50px;
+    resize: none;
+}
+
+/* --------------- ADM NOSSAS LOJAS --------------  */
+
+#caixa_nossasLojas{
+    width: 350px;
+    height: 450px;
+    margin-top: 20px;
+    margin-left: 450px; 
+}
+
+#caixa_nossasLojas h1{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+/* --------------- ADM NOSSAS EVENTOS --------------  */
+
+#caixa_nossosEventos{
+    width: 1200px;
+    min-height: 500px;
+    height: auto;
+	overflow: hidden;
+    box-sizing: border-box;
+}
+
+.center_eventos{
+    padding-left: 450px;
+}
+
+#caixa_nossosEventos h1{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.table_eventos{
+    width: 750px;
+    min-height: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;    
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 250px;
+}
+
+.table_eventos img{
+    width: 30px;
+    height: 30px;
+}
+
+.table_eventos tr td{
+     border: solid 1px black;
+}
+
+
+/* --------------- ADM PRODUTOS --------------  */
+
+#dados_produto{
+    width: 1200px;
+    height: 430px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 450px;
+}
+
+#dados_categoria{
+    width: 1200px;
+    height: 230px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 450px;
+}
+
+
+
